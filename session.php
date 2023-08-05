@@ -1,0 +1,9 @@
+<?php
+session_start();
+$user=$_SESSION['user'];
+$role=$_SESSION['role'];
+if(!isset($_SESSION['user']))
+{
+    header("Location:http://localhost/zoosite/register.php");
+}
+?>
